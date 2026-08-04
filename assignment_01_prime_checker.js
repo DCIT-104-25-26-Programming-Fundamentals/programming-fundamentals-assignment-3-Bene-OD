@@ -42,4 +42,31 @@
 // YOUR CODE BELOW — remove the // symbols from the scaffold and fill it in
 // =============================================================================
 
+const readlineSync = require('readline-sync');
+
+function isPrime(number) {
+  if (number < 2) {
+    return false;
+  }
+
+  const limit = Math.floor(Math.sqrt(number));
+  for (let divisor = 2; divisor <= limit; divisor += 1) {
+    if (number % divisor === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+function main() {
+  const number = readlineSync.questionInt('Enter a number: ');
+  const result = isPrime(number)
+    ? `${number} is a prime number.`
+    : `${number} is NOT a prime number.`;
+
+  console.log(result);
+}
+
+main();
 

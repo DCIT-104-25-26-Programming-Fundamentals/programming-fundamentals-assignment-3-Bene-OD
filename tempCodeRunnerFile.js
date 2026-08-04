@@ -1,8 +1,4 @@
-// =============================================================================
-// PROGRAMMING FUNDAMENTALS — Assignment 9
-// =============================================================================
-//
-// TASK: Console-Based Simple Calculator
+TASK: Console-Based Simple Calculator
 //
 // Build a calculator program that runs in the console and performs basic
 // arithmetic operations based on the user's input.
